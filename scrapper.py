@@ -1,7 +1,7 @@
 import discum, time 
-token = ""
-guild_id = ''
-channel_id = ''
+token = "" #token da conta 
+guild_id = '' # id do servidor
+channel_id = '' #id do canal
 bot = discum.Client(token= token, log=True)
 bot.gateway.fetchMembers(guild_id, channel_id, keep=['public_flags','username','discriminator','premium_since'],startIndex=0, method='overlap')
 @bot.gateway.command
