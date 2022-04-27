@@ -30,7 +30,7 @@ def __get_badges(flags) -> list[str]:
             if flags & badge_flag == badge_flag:
                 badges.append(badge_name)
         return badges
-with open('result.txt', 'w', encoding="utf-8") as file :
+with open('results.txt', 'w', encoding="utf-8") as file :
     for memberID in bot.gateway.session.guild(guild_id).members:
         id = str(memberID)
         temp = bot.gateway.session.guild(guild_id).members[memberID].get('public_flags')
