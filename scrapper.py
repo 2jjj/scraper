@@ -19,7 +19,7 @@ def __get_badges(flags) -> list[str]:
             1 << 2:  'HypeSquad Events',
             1 << 3:  'Bug Hunter Level 1',
             1 << 9:  'Apoiador Inicial',
-            1 << 10: 'Team User',
+            #1 << 10: 'Team User',
             1 << 12: 'System',
             1 << 14: 'Bug Hunter Level 2',
             1 << 17: 'Developer',
